@@ -15,6 +15,9 @@ const responsiveProperties = defineProperties({
     md: { '@media': breakpoints.md },
     lg: { '@media': breakpoints.lg },
     xl: { '@media': breakpoints.xl },
+    mobile: {},
+    tablet: { '@media': breakpoints.tablet },
+    desktop: { '@media': breakpoints.desktop },
   },
   defaultCondition: 'initial',
   properties: {

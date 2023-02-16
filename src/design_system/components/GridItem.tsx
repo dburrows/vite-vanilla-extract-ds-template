@@ -3,10 +3,10 @@ import { Box, BoxProps } from './Box';
 import { generateGridItemDisplay } from '../theme/gridHelpers';
 
 export const GridItem = ({
-  gridColumn = { initial: '2', md: '12' },
+  gridColumn = { mobile: '2', tablet: '12' },
   children,
   ...restProps
-}: Omit<BoxProps, 'span'>): JSX.Element => {
+}: BoxProps): JSX.Element => {
   return (
     <Box
       gridColumn={gridColumn}

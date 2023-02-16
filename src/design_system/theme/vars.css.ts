@@ -8,6 +8,9 @@ export const breakpoints = {
   md: 'screen and (min-width: 768px)',
   lg: 'screen and (min-width: 1024px)',
   xl: 'screen and (min-width: 1280px)',
+  mobile: {},
+  tablet: 'screen and (min-width: 768px)',
+  desktop: 'screen and (min-width: 1024px)',
 };
 
 /*
@@ -197,6 +200,7 @@ export const sizes = {
   half: '50%',
   full: '100%',
   fitContent: 'fit-content',
+  container: '83.75rem',
 };
 
 export const gridColumns = generateGridItemColumns();

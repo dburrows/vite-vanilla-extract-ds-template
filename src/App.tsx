@@ -41,13 +41,13 @@ function App() {
           md: 3,
         }}
       >
-        <GridItem p={2} m={2} backgroundColor="primaryOrange" flexGrow={1}>
+        <GridItem p={2} m={2} backgroundColor="primaryOrange">
           foo bar
         </GridItem>
-        <GridItem p={2} m={2} backgroundColor="primaryOrange" flexGrow={1}>
+        <GridItem p={2} m={2} backgroundColor="primaryOrange">
           bar
         </GridItem>
-        <GridItem p={2} m={2} backgroundColor="primaryOrange" flexGrow={1}>
+        <GridItem p={2} m={2} backgroundColor="primaryOrange">
           buzz
         </GridItem>
       </Grid>

@@ -5,17 +5,17 @@ interface IGridItem {
 }
 
 export const generateGridItemDisplay = (
-  gridColumns: GridItemVariants['gridColumn']
+  spans: GridItemVariants['gridColumn']
 ): IGridItem =>
-  typeof gridColumns === 'object'
-    ? Object.entries(gridColumns).reduce(
+  typeof spans === 'object'
+    ? Object.entries(spans).reduce(
         (acc, [key, value]) => ({
           ...acc,
           [key]: value === 0 ? 'none' : 'unset',
         }),
         {}
       )
-    : gridColumns === 0
+    : spans === 0
     ? 'none'
     : 'unset';
 
